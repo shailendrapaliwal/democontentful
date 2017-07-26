@@ -1,0 +1,545 @@
+html 
+{
+	margin: 0;
+	padding: 0;
+}
+.clear 
+{
+	clear:both;
+}
+
+body 
+{
+	margin: 0 auto;
+	height: auto;
+	width: 1250px;
+	padding: 0;
+}
+.wrapper 
+{
+	margin-top: 10px;
+}
+/********************************************************* Header start here ********************************************************************/
+.logo
+{
+	height:90px;
+	width:130px;
+	float:left;
+}
+
+.search
+{
+	border-radius: 7px; 
+	float:right;
+	background-color:#003466;
+	color: #FFFFFF;
+	font-family: 'Calibri';
+    	font-size: 18px;
+	font-weight: bold;
+	height:10px;
+	width:300px;
+	padding:10px;
+	border: 0px solid;
+}
+
+::-webkit-input-placeholder
+{
+	color: white;
+	font-family: 'Calibri';
+	font-size: 18px;
+}
+
+:-moz-placeholder 
+{
+	color: white;
+	font-family: 'Calibri';
+	font-size: 18px;
+}
+
+::-moz-placeholder
+{ 				 /* Firefox 19+ */
+	color: white;
+	font-family: 'Calibri';
+	font-size: 18px;
+}
+
+:-ms-input-placeholder
+{  
+	color: white;
+	font-family: 'Calibri';
+	font-size: 18px; 
+}
+
+.ser_icon
+{
+	position:relative;
+	height:15px;
+	width:15px;
+	float:right;
+	top:6px;
+	left:290px;
+}
+
+
+.navigation
+{
+	margin: 0 auto;
+	width: auto;
+	float:right;
+	margin-top:-15px;
+}
+
+ul.mainnav
+{
+	float: left;
+	position: relative;
+	list-style-type:none;
+}
+
+ul.mainnav li 
+{
+	float: left;
+	font-family: 'HelveticaWorld-Regular';
+	font-size: 14px;
+	padding:5px 0;
+}
+
+ul.mainnav li a
+{
+	color: red;
+	float: left;
+	font-family: 'Calibri';
+	font-size: 20px;
+	font-weight: bold;
+	line-height: 40px;
+	padding:0px 15px;
+	text-decoration:none;
+}
+
+ul.mainnav li .line
+{
+	border-bottom:2.5px solid;
+}
+
+ul.mainnav li a:hover,ul.mainnav li a.active 
+{
+	color: #003466;
+}
+
+ul.mainnav li a#magic-line 
+{
+	background: url("../images/red_dot.png") no-repeat ;
+	background-size: 15px;
+	background-position: 50% 100%;
+	color: #D50100;
+	height: 50px;
+	top :4px;
+	list-style: none outside none;
+	opacity: 1;
+	position: absolute;
+	text-align:center;
+	left:0;
+	right:0;
+	bottom:0;
+    	z-index: -1;
+}
+
+/************************************************************ Header End here *******************************************************************/
+
+
+/*********************************************************** Slider Start here******************************************************************/
+
+.slideshow-container 
+{
+	max-width: 1340px;
+	margin: auto;
+} 
+
+.dot 
+{
+	cursor:pointer;
+	height: 15px;
+	width: 15px;
+	margin: 0 2px;
+	background-color: #003466;
+	display: inline-block;
+	transition: background-color 0.6s ease;
+}
+
+.dot:hover
+{
+	cursor:pointer;
+	 height: 15px;
+	 width: 15px;
+	 margin: 0 2px;
+	 background-color: #A21327;
+	 display: inline-block;
+	 transition: background-color 0.6s ease;
+}
+
+/* Fading animation */
+.fade 
+{
+	-webkit-animation-name: fade;
+	-webkit-animation-duration: 1.5s;
+	animation-name: fade;
+	animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade 
+{
+	from {opacity: .4} 
+	to {opacity: 1}
+}
+
+@keyframes fade 
+{
+	from {opacity: .4} 
+	to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) 
+{
+.slprev, .slnext,.text 
+	{
+		font-size: 11px;
+	}
+}
+
+.allinone
+{
+	width:100%;
+	height:350px;  
+	
+}
+
+.box-center
+{
+	text-align:center; 
+	margin-top:-10px;
+}
+
+/************************************************************************* Slider End here*******************************************************/
+
+
+/*************************************************************** Inforamtion Box Satrt here*******************************************************/
+.welcome-left
+{
+	height: auto;
+	width: 70%;
+	float:left;
+    margin-right: 10px;
+}
+
+.welcome-head
+{
+	font-family: 'Calibri';
+   	font-size: 25px;
+	color:#003466;
+	margin-top:-4px;
+	font-weight:bold;
+	border-bottom:3px solid;
+	border-color:#ff3300;
+	border-left-width: 15px;
+}
+
+.welcome-intro
+{
+	text-align: justify;
+	font-family: 'Calibri';
+	color:#FF3300;
+	font-size:18px;
+}
+
+.sidebar
+{
+	width:29%;
+	float: right;
+	
+}
+
+.news-head
+{
+	font-family: 'Calibri';
+    	font-size: 25px;
+	color:#003466;
+	margin-top:-4px;
+	font-weight:bold;
+	border-bottom:3px solid;
+	border-color:#ff3300;
+
+}
+
+.first_head
+{
+	font-family: 'Calibri';
+	color:#003466;
+	font-weight:bold;
+	font-size: 20px;
+}
+
+.info_heading
+{
+	font-family: 'Calibri';
+	font-size: 25px;
+	color: #003466;
+	font-weight: bold;
+	border-bottom: 3px solid;
+	border-color: white;
+	border-left-width: 15px;
+	
+}
+
+.info_one-left 
+{
+	width: 49.8%;
+	height: 150px;
+ 	background-color: #FF6666;
+	border-radius: 5px;
+	margin-bottom: 4px;
+	float: right;
+}
+
+.info_one-left2
+{
+	 width: 49.8%;
+	 height: 150px;
+	 background-color: #FF6666;
+	 border-radius: 5px;
+	 margin-bottom: 4px;
+	 float: left;
+}
+
+.height-widht-img
+{
+	height:150px;
+	width:150px;
+   	 float: left;
+	margin-right: 5px;	
+}
+
+.info_main_one
+{
+	font-family: 'Calibri';
+    	font-size: 17px;
+	padding: 5px;
+	color:white;
+   	 text-align: justify;
+}
+
+.readmore
+{
+	color:white;
+	font-family: 'Calibri';
+   	font-size: 17px;
+	font-weight:bold;
+	text-decoration:none;
+	margin-top: -18px;
+    	float: right;
+}
+
+.info_two-left
+{
+	width: 650px;
+	height: 150px;
+	background-color :#FF6666;
+	top:150px;
+	border-radius:5px;
+}
+
+.info_heading_two
+{
+
+	font-family: 'Calibri';
+	font-size: 25px;
+	color: #003466;
+	font-weight: bold;
+	border-bottom: 3px solid;
+	border-color: white;
+	border-left-width: 15px;
+	margin-top: -152px;
+	margin-left: 155px;
+}
+
+.info_main_two
+{
+	font-family: 'Calibri';
+    	font-size: 17px;
+	margin-left: 156px;
+	margin-top: 5px;
+	color:white;
+}
+
+.border
+{
+	border-bottom:3px solid;
+	border-color:#ff3300;
+	margin-top:10px;
+}
+
+ul.footer-one
+{
+	font-family: 'Calibri';
+	font-size: 15px;
+	list-style: none;
+	float:left;
+	color:#ff3300;
+	font-weight:bold;
+	margin-right: 20px;
+	margin-top: 5px;
+	padding:0px;
+}
+
+.heading
+{
+	color:#003466;
+	font-weight:bold;
+}
+
+.p
+{
+	margin-top:-15px;
+}
+
+ul.footer-right
+{
+	float: right !important;	   
+	float: right;
+	-webkit-padding-start: 0px;
+	text-align: right;
+	font-family: 'Calibri';
+	font-size: 15px;
+	list-style: none;
+	float:left;
+	color:#ff3300;
+	font-weight:bold;
+	margin-top: 5px;
+	padding:0px;
+}
+
+.logo-footer
+ {
+	float:right;
+	text-align:right;
+	margin-bottom:10px;
+  	margin-top: -100px;
+}
+
+.effact
+{
+	font-family: 'Calibri';
+	font-size: 15px;
+	color:#ff3300;	
+}
+
+.right
+{
+	 text-align: justify;
+	color:red;
+}
+
+/* news Releted Content */
+.news-details
+ {
+	margin-bottom:5px;
+}
+
+.news-details img
+{
+	float:left;
+	margin-right:5px;
+}
+
+div.accordion 
+{
+   	font-family: 'Calibri';
+   	font-size: 20px;
+	font-weight:bold;
+	color:#003466;
+	cursor: pointer;
+	padding: 18px 0;
+	width: 100%;
+	border: none;
+	text-align: left;   
+	transition: 0.4s;
+}
+
+div.panel 
+{    
+	  max-height: 0;
+	  overflow: hidden;
+	  opacity: 0;
+	  padding:0px;
+	  font-family: 'Calibri';
+	  font-size: 13px;
+}
+
+div.panel.show 
+{
+	opacity: 1;
+	 max-height: 500px;  
+}
+
+.margin-news
+{
+	margin-top:-35px;
+}
+.margin-news-second
+{
+	margin-top:-15px;
+}
+
+.bottom
+{
+	margin-top:-15px;
+	margin-left:15px;
+}
+
+.border
+{
+	margin-top:3px;
+	border-bottom:3px solid;
+	border-color:#ff3300;
+
+}
+/*.slide-desc {
+	
+    left: 0;
+    padding: 0 5px 0 10px;
+    position: absolute;
+    bottom: 15%;
+    max-width: 85%;
+   display:inline-block;
+}*/
+
+.slide-desc 
+{
+   	color: white;
+	font-family: 'Calibri';
+	font-size:20px;
+	position: absolute;
+	text-transform: uppercase;
+	text-align:center;
+	width: 350px;
+	background-color :#003466;
+	border-radius:5px;
+	padding: 10px;
+	margin-top: -80px;
+}
+	
+.slide-desc  p
+{
+	margin: 0;
+	padding: 0;
+}
+
+.pointer
+{
+	cursor:pointer;
+}
+.trianleimg
+{
+margin:left:10px;
+}
+

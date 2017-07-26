@@ -1,0 +1,171 @@
+<section class="product-nav">
+	<div class="row head">
+		<div class="columns product-category">
+			<a href="{{productpagecontent.productUrl}}">{{productpagecontent.title}}</a>
+		</div>
+		<div class="columns text-right product-list-toggle">
+			<a href="#product-list" style="display:block;line-height:2rem"><span class="open">List</span> <span class="open icon icon-grid-list"></span><span class="close icon icon-close" style="font-size: 1.8em; vertical-align: top; line-height:2rem"></span></a>
+		</div>
+	</div>
+	<div class="row small-up-2 medium-up-3 large-up-5 product-list">
+  {{#each productpagecontent.productList}}
+    <div class="column product">
+      {{#if this.isUrl}}
+      <a href="{{this.productUrl}}">
+        <img src="{{this.productLogo}}" alt="{{this.title}}">
+      </a>
+      {{else}}
+        <img src="{{this.productLogo}}" alt="{{this.title}}">
+      {{/if}}
+        <div class="details">
+      		<div class="decorator">
+            {{{this.productTooltip}}}
+          </div>
+    	</div>
+    </div>
+  {{/each}}
+
+	</div>
+
+  <div class="row small-up-2 medium-up-3 large-up-5 other-product-list">
+    <div class="columns">
+    </div>
+  </div>
+
+</section>
+
+<section id="header">
+	<div class="row collapse">
+		<img src="{{productpagecontent.banner}}" alt="">
+	</div>
+</section>
+
+<div class="body">
+	<section id="intro">
+		<div class="row">
+			<div class="columns small-12">
+    			{{{productpagecontent.heading}}}
+
+          {{#if productpagecontent.isSubProduct}}
+          {{else}}
+            {{{productpagecontent.content}}}
+          {{/if}}
+      </div>
+		</div>
+	</section>
+
+  {{#if productpagecontent.isSubProduct}}
+      <section id="attachments">
+      <ul class="menu">
+				{{#if productpagecontent.isLabelAsset}}
+          <li><a href="#attachments-labels"><span class="extra-white-space">
+            <span class="icon icon-label"></span>Label</span></a></li>
+				{{/if}}
+				{{#if productpagecontent.isSdsAsset}}
+          <li><a href="#attachments-sds"><span class="extra-white-space">
+            <span class="icon icon-information"></span>SDS</span></a></li>
+				{{/if}}
+				{{#if productpagecontent.isHaznoteAsset}}
+          <li><a href="#attachments-haznote"><span class="extra-white-space">
+              <span class="icon icon-information"></span>HazNote</span></a></li>
+				{{/if}}
+      </ul>
+      <div class="row">
+          <div class="columns small-12">
+            {{#if productpagecontent.isLabelAsset}}
+              <div class="panel" id="attachments-labels">
+                  <div class="row small-up-1 medium-up-2 attachments">
+                      {{#each productpagecontent.labelAsset}}
+                          <div class="column">
+                            <a href="{{this.assetUrl}}" target="_blank">
+                              <span class="icon icon-attachment"></span>
+                              <span class="title">{{this.assetTitle}}</span>
+                            </a>
+                        </div>
+                    {{/each}}
+                  </div>
+              </div>
+              {{/if}}
+              {{#if productpagecontent.isSdsAsset}}
+              <div class="panel" id="attachments-sds">
+                  <div class="row small-up-2 medium-up-3 attachments">
+                    {{#each productpagecontent.sdsAsset}}
+                      <div class="column">
+                          <a href="{{this.assetUrl}}" target="_blank">
+                              <br>
+                              {{this.assetTitle}}
+                          </a>
+                      </div>
+                      {{/each}}
+                  </div>
+              </div>
+              {{/if}}
+
+              {{#if productpagecontent.isHaznoteAsset}}
+              <div class="panel" id="attachments-haznote">
+                  <div class="row small-up-2 medium-up-3 attachments">
+                    {{#each productpagecontent.haznoteAsset}}
+                      <div class="column">
+                          <a href="{{this.assetUrl}}" target="_blank">
+                              <br>
+                              {{this.assetTitle}}
+                          </a>
+                      </div>
+                      {{/each}}
+                  </div>
+              </div>
+              {{/if}}
+          </div>
+      </div>
+    </section>
+
+  {{{productpagecontent.content}}}
+
+  {{/if}}
+
+  {{#if productpagecontent.isSubProduct}}
+  {{else}}
+	<section class="product-nav body-products">
+		<div class="row">
+			<div class="columns small-12">
+				<h2>{{productpagecontent.productListTitle}}</h2>
+			</div>
+		</div>
+
+		<div class="row small-up-2 medium-up-3 large-up-5 product-list" style="display: block">
+      {{#each productpagecontent.productList}}
+      <div class="column product">
+        {{#if this.isUrl}}
+          <a href="{{this.productUrl}}">
+            <img src="{{this.productLogo}}" alt="{{this.title}}">
+          </a>
+        {{else}}
+          <img src="{{this.productLogo}}" alt="{{this.title}}">
+        {{/if}}
+        <div class="details">
+      		<div class="decorator">
+            {{{this.productTooltip}}}
+          </div>
+    	</div>
+      </div>
+    {{/each}}
+</div>
+
+    <div class="row small-up-2 medium-up-3 large-up-5 other-product-list" style="display: block">
+    <div class="columns">
+    </div>
+    </div>
+	</section>
+
+  <section id="blocks">
+    <div class="row small-up-1 medium-up-3">
+      <div class="columns">
+      <h3>
+      </h3>
+      <p></p>
+      </div>
+    </div>
+  </section>
+  {{/if}}
+
+	</div>

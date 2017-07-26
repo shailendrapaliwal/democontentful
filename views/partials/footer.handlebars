@@ -1,0 +1,114 @@
+<div class="footer">
+				<ul class="footer-one margin pointer">
+            {{#each footerContent.Association}}
+
+         {{#if @first}}
+				 <li class="heading">{{this.titlename}}</li>
+				<!--	<li>The Association</li>
+					<li>The Industry</li>
+					<li>Generic Medicines</li>
+					<li>Staff</li>
+					<li>Membership</li>
+					<li>Careers</li>
+					<li>Contact</li> -->
+					 {{else}}
+          <li>{{this.titlename}}</li>
+					 {{/if}}
+          {{/each}}
+				</ul>
+
+				<ul class="footer-one pointer">
+					  {{#each footerContent.publication}}
+			<!--		<li class="heading">Publication</li>
+					<li>Biosimilars</li>
+					<li>Drug Disposal/Take Backs</li>
+					<li>Drug Shortages</li>
+					<li>International Trade</li>
+					<li>Agreements</li>
+					<li>Generic Drug Labeling</li>
+					<li>Medicaid</li>
+					<li>Patent Settlements</li>
+					<li>Quality</li>
+					<li>State Initiatives</li> -->
+					{{#if @first}}
+ 				 <li class="heading">{{this.titlename}}</li>
+				 {{else}}
+					<li>{{this.titlename}}</li>
+					{{/if}}
+					{{/each}}
+				</ul>
+
+
+					<ul class="footer-one pointer">
+						 {{#each footerContent.applicationform}}
+				<!--	<li class="heading">Application Form</li>
+					<li>Discussing My Prescription</li>
+					<li>Grassroots Action Center</li> -->
+					{{#if @first}}
+ 				 <li class="heading">{{this.titlename}}</li>
+				 {{else}}
+					<li>{{this.titlename}}</li>
+					{{/if}}
+					{{/each}}
+				</ul>
+
+					<ul class="footer-one pointer">
+						 {{#each footerContent.gallery}}
+				<!--	<li class="heading">Gallery</li>
+						<li>Upcoming Events</li>
+					<li>The Industry</li> -->
+					{{#if @first}}
+ 				 <li class="heading">{{this.titlename}}</li>
+				 {{else}}
+					{{this.titlename}}</li>
+					{{/if}}
+					{{/each}}
+				</ul>
+
+					<ul class="footer-one pointer">
+		<!--			<li class="heading">Privacy Policy</li>
+					<li>Corporate identification No </li> -->
+					 {{#each footerContent.privacypolicy}}
+					 {{#if @first}}
+					 <li class="heading">{{this.titlename}}</li>
+					 {{else}}
+					{{this.titlename}}</li>
+					{{/if}}
+					{{/each}}
+				</ul>
+
+					<ul class="footer-one pointer">
+			<!--		<li class="heading">Drug Alert</li>
+					<li>Subscribe here </li>
+					<li>Email Address </li> -->
+					{{#each footerContent.drugalert}}
+					{{#if @first}}
+ 				 <li class="heading">{{this.titlename}}</li>
+				 {{else}}
+				 {{this.titlename}}</li>
+				 {{/if}}
+				 {{/each}}
+				</ul>
+
+
+				<ul class="footer-right pointer">
+				<!--	<div class="">Our Employees</div>
+					<div class="">Five Star policy</div>
+					<div class="">Our Other  Business</div>
+					<div class="">CPSIA Certification</div>
+					<div class="">Customer Healthcare</div>
+					<div class="">India Declaration of Compliance</div> -->
+					{{#each footerContent.ourEmployee}}
+					{{#if @first}}
+ 				 <li class="heading">{{this.titlename}}</li>
+				 {{else}}
+				 {{this.titlename}}</li>
+				 {{/if}}
+				 {{/each}}
+				</ul>
+				<div class="clear"></div>
+				<div class="logo-footer">
+					<img src="https://images.contentful.com/bsn92fjqts54/38zYSWYhmMkYsoSggQccyW/ffdfdd496ec8a46072ce0680d6758336/logo.png" height="70">
+					<div class="effact">Copyright &copy; 2016 Kashyap Pharamaceuticals Limited. All Rights Reserved</div>
+				</div>
+			</div>

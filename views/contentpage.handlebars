@@ -1,0 +1,47 @@
+<section id="product-category-menu">
+	<div class="row small-up-3 medium-up-6">
+    {{{contentPage.subProductImages}}}
+  </div>
+</section>
+
+<section id="header">
+	<div class="row collapse">
+		<img src="{{contentPage.imageBanner}}" alt="">
+	</div>
+</section>
+
+<div class="body">
+	<section id="intro">
+		<div class="row">
+			<div class="columns small-12">
+			<h1>{{contentPage.mainProductTitle}}</h1>
+			<h2>{{contentPage.mainProductTitleDesc}}</h2>
+			</div>
+		</div>
+	</section>
+	<section id="product-categories">
+
+    {{#each contentPage.products}}
+      <div class="category">
+        <div class="row">
+          <div class="columns small-3 icon">
+            <img src="{{this.image}}" alt="">
+          </div>
+          <div class="columns small-9 copy">
+            <h2>{{this.productTitle}}</h2>
+            <p>{{this.productDescription}}</p>
+            <a href="{{this.buttonUrl}}" class="button">{{this.buttonText}}</a>
+          </div>
+        </div>
+      </div>
+    {{/each}}
+
+  </section>
+	<section id="content">
+		<div class="row">
+			<div class="columns small-12">
+        {{{contentPage.mainProductDesc}}}
+      </div>
+		</div>
+	</section>
+</div>

@@ -1,0 +1,32 @@
+
+			<div class="header">			<!-- Header start here-->
+				<div class="header-left">
+					<div class="logo">
+						<img class="logo" src="{{headerContent.siteLogo}}"/>
+					</div>
+				</div>
+				<div class="header-right">
+					<div class="search-box">
+						<input type="text" class="search" placeholder="Search Here ...">
+						<a href="#"><img class="ser_icon" src="{{headerContent.searchbox}}"/></a>
+					</div>
+
+					<div class="navigation">
+						<ul class="mainnav">
+				<!--			{{#each headerContent.nav}}
+						 	 <li><a title="" href="#" class="active">{{this.name}}</a></div>
+						  {{/each}} -->
+				  		{{#each headerContent.nav}}
+						{{#if @first}}
+							<li><a title="" href="#" class="line active">{{this.name}}</a></li>
+							 {{else}}
+							 <li><a title="" href="#" class="line">{{this.name}}</a></li>
+							  {{/if}}
+							{{/each}}
+						</ul>
+					</div>
+				</div>
+			</div>				<!-- Header End Here-->
+	<!--
+			</div>	<!-- Footer end here -->
+		<!-- Wrapper end here-->

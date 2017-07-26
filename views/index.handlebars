@@ -1,0 +1,135 @@
+<div class="clear"></div>
+			<div class="container">			<!-- Main Container start Here-->
+				<div class="slider">
+					<div class="slideshow-container">
+            		<!--slider here-->
+            {{#each indexPage.sliderarray}}
+						<div class="mySlides fade">
+							<img src="{{this.backgroundImage}}" class="allinone">
+							<div class="slide-desc">
+								<p>formulations innovation</p>
+							</div>
+						</div>
+ {{/each}}
+					</div>
+					<br>
+					<div class="box-center slider-controller">
+						<span class="dot" onclick="currentSlide(1)"></span>
+						<span class="dot" onclick="currentSlide(2)"></span>
+						<span class="dot" onclick="currentSlide(3)"></span>
+						<span class="dot" onclick="currentSlide(4)"></span>
+						<span class="dot" onclick="currentSlide(5)"></span>
+					</div>
+				</div>
+  <!-- welcome message -->
+        <div class="welcome-news">						<!--content of the welcome and news  start here -->
+ 					<div class="welcome-left">
+ 						<h1 class="welcome-head">{{indexPage.welcomeHead1}}</h1>
+ 						<div class="welcome-intro">
+ 							<p class="p">{{indexPage.welcomemsg}}</p>
+ 						</div>
+ 					</div>
+         </div>
+   <!-- welcome message ends here -->
+
+   <!-- News section starts here -->
+   <div class="sidebar">
+     <div class="news-right ">
+       <h1 class="news-head">NEWS</h1>
+       <div class="news-content">
+         <div class="accordion margin-news"><img id="myImage1" onclick="changeImage1()" class="trianleimg" src="{{indexPage.closeBackgroundImage}}" height="15px" width="15px" />Recent News</div>
+           <div class="panel bottom">
+
+
+             <div class="news-details">
+             <img src="{{indexPage.research}}" height="62" width="110">
+             <div class="right">{{indexPage.newsDesc}}</div>
+             </div>
+             <div class="clear"></div>
+           </div>
+           </div>
+
+     </div>
+
+</div>
+   <!-- News section ends here -->
+
+   <!-- header section starts here -->
+   <div class="clear"></div>
+				<div class="info_container">
+
+
+          <div class="info_one-left2">
+					<!--	<img src="{{indexPage.InfoImg}}" class="height-widht-img"> -->
+      <!--     <img src="{{indexPage.InfoImg}}" class="height-widht-img">  -->
+      <img src="{{indexPage.InfoImg}}" class="height-widht-img"/>
+          <div class="info_heading">{{indexPage.infoheading}}</div>
+          <div class="info_main_one">
+          {{indexPage.InfoDesc1}}
+          <div ><a href="#" class="readmore">Read More...</a></div>
+          </div>
+        </div>
+
+
+
+					<div class="info_one-left">
+				<!--		<img src="{{indexPage.InfoImg}}" class="height-widht-img">  -->
+        <img src="{{indexPage.InfoImg}}" class="height-widht-img"/>
+						<div class="info_heading">{{indexPage.infoheading}}</div>
+						<div class="info_main_one info_desc">
+						{{indexPage.InfoDesc1}}
+						<div ><a href="#" class="readmore">Read More...</a></div>
+						</div>
+					</div>
+          <div class="info_one-left2">
+          <!--	<img src="{{indexPage.InfoImg}}" class="height-widht-img"> -->
+      <!--     <img src="{{indexPage.InfoImg}}" class="height-widht-img">  -->
+      <img src="{{indexPage.InfoImg}}" class="height-widht-img"/>
+          <div class="info_heading">{{indexPage.infoheading}}</div>
+          <div class="info_main_one">
+          {{indexPage.InfoDesc1}}
+          <div ><a href="#" class="readmore">Read More...</a></div>
+          </div>
+        </div>
+
+
+
+          <div class="info_one-left">
+        <!--		<img src="{{indexPage.InfoImg}}" class="height-widht-img">  -->
+        <img src="{{indexPage.InfoImg}}" class="height-widht-img"/>
+            <div class="info_heading">{{indexPage.infoheading}}</div>
+            <div class="info_main_one info_desc">
+            {{indexPage.InfoDesc1}}
+            <div ><a href="#" class="readmore">Read More...</a></div>
+            </div>
+          </div>
+
+          <div class="info_one-left2">
+          <!--	<img src="{{indexPage.InfoImg}}" class="height-widht-img"> -->
+      <!--     <img src="{{indexPage.InfoImg}}" class="height-widht-img">  -->
+      <img src="{{indexPage.InfoImg}}" class="height-widht-img"/>
+          <div class="info_heading">{{indexPage.infoheading}}</div>
+          <div class="info_main_one">
+          {{indexPage.InfoDesc1}}
+          <div ><a href="#" class="readmore">Read More...</a></div>
+          </div>
+        </div>
+
+
+
+          <div class="info_one-left">
+        <!--		<img src="{{indexPage.InfoImg}}" class="height-widht-img">  -->
+        <img src="{{indexPage.InfoImg}}" class="height-widht-img"/>
+            <div class="info_heading">{{indexPage.infoheading}}</div>
+            <div class="info_main_one info_desc">
+            {{indexPage.InfoDesc1}}
+            <div ><a href="#" class="readmore">Read More...</a></div>
+            </div>
+          </div>
+
+        </div>
+  </div>
+   <!--header section ends here -->
+  </div>
+  <div class="clear"></div>
+			<div class="border"></div>
